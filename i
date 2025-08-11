@@ -17,9 +17,6 @@ for bin in curl tar; do
   fi
 done
 
-SUDO=""
-if need sudo; then SUDO="sudo -E"; fi
-
 workdir="$(mktemp -d)"
 trap 'rm -rf "$workdir"' EXIT
 
@@ -37,14 +34,10 @@ if [ -z "${inst:-}" ]; then
 fi
 chmod +x "$inst"
 
-echo "[*] Запускаю install_openh264.sh… (может попросить пароль sudo пользователя deck)"
+echo "[*] Запускаю install_openh264.sh…"
 (
   cd "$(dirname "$inst")"
-  if [ -n "$SUDO" ]; then
-    $SUDO ./$(basename "$inst")
-  else
-    ./$(basename "$inst")
-  fi
+  ./$(basename "$inst")
 )
 
 echo "[✓] Готово."
