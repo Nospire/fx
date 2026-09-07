@@ -1,3 +1,12 @@
+> [!WARNING]
+> **Репозиторий заархивирован и больше не развивается.**
+> Актуальное решение — **[Geekcom Deck Tools (GDT)](https://github.com/Nospire/GDT)**: графическое приложение для Steam Deck, в котором фикс OpenH264 — одна из встроенных функций, вместе с обновлением SteamOS и Flatpak через временный VPN-туннель.
+> Команда `bash <(curl -fsSL https://raw.githubusercontent.com/Nospire/fx/main/i)` продолжит работать, но новых версий кодека и исправлений здесь не будет.
+>
+> **This repository is archived and no longer maintained.**
+> Use **[Geekcom Deck Tools (GDT)](https://github.com/Nospire/GDT)** instead — a GUI app for Steam Deck where the OpenH264 fix is one of the built-in features, along with SteamOS and Flatpak updates over a temporary VPN tunnel.
+> The one-liner will keep working, but no further codec updates or fixes will land here.
+
 # OpenH264 Installer for Steam Deck
 
 [🇷🇺 **Русский**](#русский) | [🇬🇧 **English**](#english)
